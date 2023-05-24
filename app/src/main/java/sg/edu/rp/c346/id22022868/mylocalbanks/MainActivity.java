@@ -11,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -69,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
         //initialising the checkbox menu item
         checkFav = findViewById(R.id.toggleFavourite);
 
-
         //bank sites and numbers
         if (bankSelect.equals("DBS")) {
             if (id == R.id.website) {
@@ -83,11 +83,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentCall);
                 return true;
             }
+
+            //my attempt at the enhancement
             if (id == R.id.toggleFavourite) {
                 tvDBS.setTextColor(Color.parseColor("#EB4034"));
                 item.setChecked(true);
                 return true;
             }
+
+
         }
         else if (bankSelect.equals("OCBC")) {
             if (id == R.id.website) {
@@ -100,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentCall);
                 return true;
             }
-            if (id == R.id.toggleFavourite) {
+            else if (id == R.id.toggleFavourite) {
                 tvOCBC.setTextColor(Color.parseColor("#EB4034"));
                 item.setChecked(true);
                 return true;
@@ -123,6 +127,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         }
+
 
         return super.onContextItemSelected(item);
     }
