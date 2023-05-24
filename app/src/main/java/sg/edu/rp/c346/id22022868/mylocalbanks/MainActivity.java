@@ -38,6 +38,17 @@ public class MainActivity extends AppCompatActivity {
         registerForContextMenu(tvOCBC);
         registerForContextMenu(tvUOB);
 
+/*        checkFav.OnCheckedChangeListener checkListener = new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked) {
+                    buttonView.setTextColor(Color.parseColor("#EB4034"));
+                } else {
+                    buttonView.setTextColor(Color.parseColor("#000000"));
+                }
+            }
+        };*/
+
 
     }
 

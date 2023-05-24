@@ -13,4 +13,5 @@
     <string name="dbsNum">18001111111</string>
     <string name="ocbcNum">18003633333</string>
     <string name="uobNum">18002222121</string>
+    <string name="advisory"><b>Please long press on the bank names to access the menu options.</b></string>
 </resources>
